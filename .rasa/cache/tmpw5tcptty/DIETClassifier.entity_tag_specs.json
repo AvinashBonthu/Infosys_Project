@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-Born",
+      "2": "I-Born",
+      "3": "L-Born",
+      "4": "U-Born",
+      "5": "B-Movie",
+      "6": "I-Movie",
+      "7": "L-Movie",
+      "8": "U-Movie",
+      "9": "B-Name",
+      "10": "I-Name",
+      "11": "L-Name",
+      "12": "U-Name",
+      "13": "B-Rating",
+      "14": "I-Rating",
+      "15": "L-Rating",
+      "16": "U-Rating",
+      "17": "B-Released",
+      "18": "I-Released",
+      "19": "L-Released",
+      "20": "U-Released",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-Born": 1,
+      "I-Born": 2,
+      "L-Born": 3,
+      "U-Born": 4,
+      "B-Movie": 5,
+      "I-Movie": 6,
+      "L-Movie": 7,
+      "U-Movie": 8,
+      "B-Name": 9,
+      "I-Name": 10,
+      "L-Name": 11,
+      "U-Name": 12,
+      "B-Rating": 13,
+      "I-Rating": 14,
+      "L-Rating": 15,
+      "U-Rating": 16,
+      "B-Released": 17,
+      "I-Released": 18,
+      "L-Released": 19,
+      "U-Released": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

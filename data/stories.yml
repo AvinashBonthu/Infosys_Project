@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: properties_entities
+    entities:
+    - Born: "1980" 
+    - Name: "Robert Downey Jr."
+    - Rating: "45"
+    - Released: "1980"
+    - Title: "Spiderman"
+
+  - action: utter_happy

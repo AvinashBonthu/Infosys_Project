@@ -1,0 +1,175 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: properties_entities
+  examples: |
+    - movies [Rowan Atkinson]{"entity": "Name"} acted in
+    - in which movie did [Rowan Atkinson]{"entity":"Name"} act
+    - movies directed by [Christopher Nolan]{"entity": "Name"}.
+    - movies directed by [christopher nolan]{"entity": "Name"}.
+    - [Angela hope]{"entity": "Name"} is followed by
+    - [Tatman]{"entity": "Name"} is followed by
+    - movies produced by [Joel Silver]{"entity": "Name"}.
+    - what are the movies that are produced by [Joel Silver]{"entity": "Name"}
+    - movies reviewed by [James Thompson]{"entity": "Name"}
+    - movies written by [Andy Wachowski]{"entity": "Name"}
+    - movies written by [Tatman]{"entity": "Name"}
+    - who follows [Angela Hope]{"entity":"Name"}
+    - who follows [Tatman]{"entity":"Name"}
+
+    - Actors born in [1980]{"entity": "Born"}
+    - Actors whose date of birth is [1980]{"entity": "Born"}
+    
+    - movies with rating [45]{"entity": "Rating"}
+    - movies whose rating is greater than [45]{"entity": "Rating"}
+    - movies which contains rating below [45]{"entity": "Rating"}
+    
+    - movies released before [1980]{"entity": "Released"}
+    - movies released after [1980]{"entity": "Released"}
+    - movies released in [1980]{"entity": "Released"}
+    - movies before [1980]{"entity": "Released"}
+    - movies after [1980]{"entity": "Released"}
+    - movies in [1980]{"entity": "Released"}
+
+    - director of [Avengers]{"entity":"Movie"}
+    - who is the director of [Notebook]{"entity":"Movie"}
+    - who is the director of [notebook]{"entity":"Movie"}
+    - who acted in the movie [Avengers]{"entity":"Movie"}.
+    - who acted in the movie [avengers]{"entity":"Movie"}.
+    - writer of movie [Avengers]{"entity": "Movie"}
+    - writer of movie [avengers]{"entity": "Movie"}
+    - who produced [avengers]{"entity": "Movie"} movie
+    - who produced [Avengers]{"entity": "Movie"} movie
+    - who produced [Notebook]{"entity": "Movie"} movie
+    - who produced [notebook]{"entity": "Movie"} movie
+    - who is the producer of the movie [Avengers]{"entity": "Movie"}
+    - who is the producer of the movie [avengers]{"entity": "Movie"}
+    - who is the writer of the movie [Avengers]{"entity": "Movie"}
+    - who is the writer of the movie [avengers]{"entity": "Movie"}
+    - who reviewed the movie [Avengers]{"entity": "Movie"}
+    - who is the reviewer of the movie [Avengers]{"entity": "Movie"}
+    - who reviewed the movie [avengers]{"entity": "Movie"}
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- lookup: Name
+  examples: |
+    - Keanu Reeves
+    - Carrie-Anne Moss
+    - Laurence Fishburne
+    - Hugo Weaving
+    - Andy Wachowski
+    - Lana Wachowski
+    - Joel Silver
+    - Emil Eifrem
+    - Charlize Theron
+    - Al Pacino
+    - Taylor Hackford
+    - Tom Cruise
+    - Jack Nicholson
+    - Demi Moore
+    - Kevin Bacon
+    - Kiefer Sutherland
+    - Noah Wyle
+    - Cuba Gooding Jr.
+    - Kevin Pollak
+    - J.T. Walsh
+    - James Marshall
+    - Christopher Guest
+    - Rob Reiner
+    - Aaron Sorkin
+    - Kelly McGillis
+
+- regex: Rating
+  examples: |
+    - \d{2,3}
+- regex: Released
+  examples: |
+    - \d{4}
+- regex: Born
+  examples: |
+    - \d{4}
+  
+
+- lookup: Title
+  examples: |
+    - The Matrix
+    - The Matrix Reloaded
+    - The Matrix Revolutions
+    - The Devil's Advocate
+    - A Few Good Men
+    - Top Gun
+    - Jerry Maguire
+    - Stand By Me
+    - As Good as It Gets
+    - What Dreams May Come
+    - Snow Falling on Cedars
+    - You've Got Mail
+    - Sleepless in Seattle
+    - Joe Versus the Volcano
+    - When Harry Met Sally
+    - That Thing You Do
+    - The Replacements
+    - RescueDawn
+    - The Birdcage
+    - Unforgiven
+    - Johnny Mnemonic
+    - Cloud Atlas
+    - The Da Vinci Code
+    - V for Vendetta
+    - Speed Racer
+
+
